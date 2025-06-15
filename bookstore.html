@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Bookstore</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .books {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .book {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .book:hover {
+      transform: translateY(-5px);
+    }
+    .book img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .book h3 {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+    }
+    .book p {
+      color: #555;
+      font-size: 0.95em;
+    }
+    .book button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .book button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 My Online Bookstore</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Books</a>
+      <a href="#">Categories</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Your Favorite Bookstore!</h2>
+    <p>Discover a wide range of books from all genres.</p>
+  </section>
+
+  <section class="books">
+    <h2>Featured Books</h2>
+    <div class="book-list">
+      <div class="book">
+        <img src="https://m.media-amazon.com/images/I/41cmTFPesBL._SY445_SX342_.jpg" alt="Book 1"/>
+        <h3>The Book Of lost Names</h3>
+        <p>by Kristin Harmel</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="book">
+      <img src="https://m.media-amazon.com/images/I/715WdnBHqYL._UF1000,1000_QL80_.jpg" alt="1984" />
+      <h3>1984</h3>
+      <p>by George Orwell</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="Harry Potter and the Sorcerer's Stone" />
+      <h3>Harry Potter and the Sorcerer's Stone</h3>
+      <p>by J.K. Rowling</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/71g2ednj0JL.jpg" alt="The Hobbit" />
+      <h3>The Hobbit</h3>
+      <p>by J.R.R. Tolkien</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg" alt="To Kill a Mockingbird" />
+      <h3>To Kill a Mockingbird</h3>
+      <p>by Harper Lee</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVDj4OgRgtZXmDJBJs-lSvQxIy_65ONomt7Q&s" alt="The Da Vinci Code" />
+      <h3>The Da Vinci Code</h3>
+      <p>by Dan Brown</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81drfTT9ZfL.jpg" alt="The Fault in Our Stars" />
+      <h3>The Fault in Our Stars</h3>
+      <p>by John Green</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81-Q2OAVeXL._AC_UF1000,1000_QL80_.jpg" alt="The Girl on the Train" />
+      <h3>The Girl on the Train</h3>
+      <p>by Paula Hawkins</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/91HHqVTAJQL.jpg" alt="It Ends With Us" />
+      <h3>It Ends With Us</h3>
+      <p>by Colleen Hoover</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81wgcld4wxL.jpg" alt="The Midnight Library" />
+      <h3>The Midnight Library</h3>
+      <p>by Matt Haig</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/710jnzKlDTL.jpg" alt="Where the Crawdads Sing" />
+      <h3>Where the Crawdads Sing</h3>
+      <p>by Delia Owens</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/71xLmdLOQ0L.jpg" alt="Dune" />
+      <h3>Dune</h3>
+      <p>by Frank Herbert</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/710TgMZba7L._AC_UF1000,1000_QL80_DpWeblab_.jpg" alt="Angels & Demons" />
+      <h3>Angels & Demons</h3>
+      <p>by Dan Brown</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81a4kCNuH+L.jpg" alt="A Man Called Ove" />
+      <h3>A Man Called Ove</h3>
+      <p>by Fredrik Backman</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/713jIoMO3UL.jpg" alt="Sapiens" />
+      <h3>Sapiens: A Brief History of Humankind</h3>
+      <p>by Yuval Noah Harari</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/71g2ednj0JL.jpg" alt="The Psychology of Money" />
+      <h3>The Psychology of Money</h3>
+      <p>by Morgan Housel</p>
+      <button>Buy Now</button>
+    </div>
+        <div class="book">
+      <img src="https://m.media-amazon.com/images/I/715WdnBHqYL._UF1000,1000_QL80_.jpg" alt="1984" />
+      <h3>1984</h3>
+      <p>by George Orwell</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="Harry Potter and the Sorcerer's Stone" />
+      <h3>Harry Potter and the Sorcerer's Stone</h3>
+      <p>by J.K. Rowling</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/71g2ednj0JL.jpg" alt="The Hobbit" />
+      <h3>The Hobbit</h3>
+      <p>by J.R.R. Tolkien</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg" alt="To Kill a Mockingbird" />
+      <h3>To Kill a Mockingbird</h3>
+      <p>by Harper Lee</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/91uwocAMtSL.jpg" alt="The Da Vinci Code" />
+      <h3>The Da Vinci Code</h3>
+      <p>by Dan Brown</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81drfTT9ZfL.jpg" alt="The Fault in Our Stars" />
+      <h3>The Fault in Our Stars</h3>
+      <p>by John Green</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81-Q2OAVeXL._AC_UF1000,1000_QL80_.jpg" alt="The Girl on the Train" />
+      <h3>The Girl on the Train</h3>
+      <p>by Paula Hawkins</p>
+      <button>Buy Now</button>
+    </div>
+        <div class="book">
+      <img src="https://m.media-amazon.com/images/I/715WdnBHqYL._UF1000,1000_QL80_.jpg" alt="1984" />
+      <h3>1984</h3>
+      <p>by George Orwell</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="Harry Potter and the Sorcerer's Stone" />
+      <h3>Harry Potter and the Sorcerer's Stone</h3>
+      <p>by J.K. Rowling</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Online Bookstore. All rights reserved.</p>
+    <p><a href="https://www.instagram.com/_narayan.10/">Follow On IG for More Information</a></p>
+  </footer>
+</body>
+</html>
